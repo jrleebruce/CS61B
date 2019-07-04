@@ -1,9 +1,12 @@
 public class HelloNumbers {
     public static void main(String[] args) {
         int x = 0;
-        while (x < 10) {
+        int y = 0;
+        while (x < 46) {
             System.out.print(x + " ");
-            x = x + 1;
+            y = y + 1;
+            x = x + y;
         }
+        System.out.println();
     }
 }
