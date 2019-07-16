@@ -1,5 +1,5 @@
-class Planet {
-static final double G = 6.67e-11;
+public class Planet {
+    private static final double G = 6.67e-11;
 
     public double xxPos;
     public double yyPos;
@@ -24,9 +24,6 @@ static final double G = 6.67e-11;
         this.yyVel = p.yyVel;
         this.mass = p.mass;
         this.imgFileName = p.imgFileName;
-    }
-
-    public Planet(){
     }
 
     public double calcDistance(Planet p) {
