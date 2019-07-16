@@ -12,7 +12,17 @@ public class NBody {
         in.readDouble();
         Planet[] p = new Planet[planetNum];
         for(int i = 0; i < planetNum; i++) {
-            p[i] = new Planet();
+            double xP = in.readDouble();
+            double yP = in.readDouble();
+            double xV = in.readDouble();
+            double yV = in.readDouble();
+            double m = in.readDouble();
+            String img = in.readString();
+            p[i] = new Planet(xP, yP, xV, yV, m, img);
+        }
+        /*    
+        for(int i = 0; i < planetNum; i++) {
+            p[i] = new Planet(p);
             p[i].xxPos = in.readDouble();
             p[i].yyPos = in.readDouble();
             p[i].xxVel = in.readDouble();
@@ -20,6 +30,7 @@ public class NBody {
             p[i].mass = in.readDouble();
             p[i].imgFileName = in.readString();
         }
+    Another way to load data. */
         return p;
     }
 
