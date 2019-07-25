@@ -84,6 +84,7 @@ public class IntList {
         IntList temp = A;
         if (A == null) {
             return B;
+        }
         while (temp.rest != null) {
             temp = temp.rest;
         }
